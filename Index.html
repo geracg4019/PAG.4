@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Genaro Nuñez Hernandez - Página básica</title>
+		<style>
+					:root{
+						/* Fondo más visible: degradado azul verdoso suave */
+						--bg: linear-gradient(135deg, #cfeef2 0%, #bfe7d9 50%, #d6f1ff 100%);
+						--card-bg: rgba(255,255,255,0.9);
+						--accent: #0b5f52; /* tono verde azulado para el nombre */
+						--muted: #254a49;
+						--footer-bg: rgba(11,95,82,0.06);
+					}
+			html,body{
+				height:100%;
+				margin:0;
+				font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+				background: var(--bg);
+				color:#18303f;
+				-webkit-font-smoothing:antialiased;
+			}
+			.container{
+				min-height:100%;
+				display:flex;
+				flex-direction:column;
+				align-items:center;
+				justify-content:center;
+				padding:2rem;
+				box-sizing:border-box;
+			}
+			.card{
+				background:var(--card-bg);
+				backdrop-filter:blur(6px);
+				border-radius:12px;
+				padding:2.25rem 2.5rem;
+				box-shadow:0 8px 30px rgba(20,40,60,0.08);
+				text-align:center;
+				max-width:900px;
+				width:100%;
+			}
+					h1{
+						margin:0 0 .4rem 0;
+						font-size:2.05rem;
+						letter-spacing:0.2px;
+						color:var(--accent);
+					}
+					p.lead{
+						margin:0 0 1.2rem 0;
+						color:var(--muted);
+						font-size:1.05rem;
+					}
+			.footer-note{
+				margin-top:2rem;
+				padding:1rem 1.25rem;
+				border-radius:10px;
+				background:var(--footer-bg);
+				color:#163248;
+				font-size:0.95rem;
+				width:100%;
+				box-sizing:border-box;
+			}
+			footer{
+				width:100%;
+				display:flex;
+				justify-content:center;
+				padding:1.25rem 1.5rem;
+				box-sizing:border-box;
+			}
+			@media (max-width:520px){
+				h1{font-size:1.5rem}
+				.card{padding:1.25rem}
+			}
+		</style>
+	</head>
+	<body>
+		<main class="container">
+			<section class="card" role="main">
+				<h1>Genaro Nuñez Hernandez</h1>
+				<p class="lead">esta es mi pagina web basica</p>
+				<div class="footer-note">“El conocimiento no es una lámpara que se enciende, sino un jardín que se cultiva.”</div>
+			</section>
+		</main>
+		<footer>
+			<small style="color:var(--muted)">© Genaro Nuñez Hernandez</small>
+		</footer>
+	</body>
+</html>
